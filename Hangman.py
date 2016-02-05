@@ -1,6 +1,6 @@
 #Jacob Hall
 #February 3rd, 2016
-#Hangman
+#Hangman v1.1
 #GNU General Public License v3.0
 
 from random import randint
@@ -46,7 +46,7 @@ def guess(letter):
             
 def getInput():
     userInput = input("Please guess a letter.\n")
-    while not (((ord(userInput) >= 65 and ord(userInput) <= 90) or (ord(userInput) >= 97 and ord(userInput) <= 122)) or len(userInput) == 1):
+    while not (len(userInput) == 1) or not ((ord(userInput) >= 65 and ord(userInput) <= 90) or (ord(userInput) >= 97 and ord(userInput) <= 122)):
         input("Please guess a valid letter.\n")
     guess(userInput)
 
