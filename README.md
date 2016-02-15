@@ -5,6 +5,7 @@ Note: You must run this program using Python 3, for example in terminal type “
 Patch Notes:
 
 v2.0
+
 -The game will now ask the user if they would like to play again after the game is over.
 
 -Clears screen after each letter guess and when a new game is started, on both Windows and Linux (Not supported in Python Shell)
